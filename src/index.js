@@ -8,6 +8,7 @@ import Test from './Component/Test/index'
  * util
  */
 import urlQuery from './util/urlQuery'
+import getUa from './util/ua'
 
 
 /**
@@ -19,16 +20,20 @@ import urlQuery from './util/urlQuery'
  * 第一种暴露方式
  */
 export default {
+  Test,
   CopyText,
+
   urlQuery,
-  Test
+  getUa
 }
 
 /**
  * 第二种暴露方式
  */
 // exports.default = {
+//   Test,
 //   CopyText,
+//
 //   urlQuery,
-//   Test
+//   getUa
 // };

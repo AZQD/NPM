@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import './demo.less'
-import {urlQuery, CopyText, Test} from '../src/index' // 开发阶段使用
-// import {urlQuery, CopyText, Test} from '../dist/index' // 测试发包使用
+import {CopyText, Test, urlQuery, getUa} from '../src/index' // 开发阶段使用
+// import {CopyText, Test, urlQuery, getUa} from '../dist/index' // 测试发包使用
 
 class Demo extends React.Component {
 
@@ -77,6 +77,15 @@ class Demo extends React.Component {
             </div>
             <div className="right">
               获取URL中的参数
+            </div>
+          </div>
+
+          <div className="partItem">
+            <div className="left">
+              getUa
+            </div>
+            <div className="right">
+              获取设备UA
             </div>
           </div>
 
