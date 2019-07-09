@@ -2,7 +2,7 @@
   "name": "lcj",
   "version": "1.0.0",
   "description": "lcj npm",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config ./config/webpack.config.dev.js",
