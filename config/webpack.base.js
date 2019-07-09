@@ -2,12 +2,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test:/\.js?$/,
+        test: /\.js?$/,
         loader: "babel-loader",
         exclude: '/node_modules/'
       },
       {
-        test:/\.(jpg|jpeg|png|gif|cur|ico|svg)$/,
+        test: /\.(jpg|jpeg|png|gif|cur|ico|svg)$/,
         use: [{
           loader: "file-loader",
           options: {
@@ -17,4 +17,4 @@ module.exports = {
       }
     ]
   }
-}
+};

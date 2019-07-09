@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import './demo.less'
-import {urlQuery, CopyText, Test} from '../src/index'
+import {urlQuery, CopyText, Test} from '../src/index' // 开发阶段使用
+// import {urlQuery, CopyText, Test} from '../dist/index' // 测试发包使用
 
-class Demo extends React.Component{
+class Demo extends React.Component {
 
   copyConfig = (copyText) => ({
     copyText: copyText, // 必填，要复制的文本

@@ -49,6 +49,6 @@ const devConfig = {
     //   filename: "main.min.css" // 提取后的css的文件名
     // })
   ],
-}
+};
 
 module.exports = merge(devConfig, baseConfig);

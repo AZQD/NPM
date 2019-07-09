@@ -18,17 +18,17 @@ import urlQuery from './util/urlQuery'
 /**
  * 第一种暴露方式
  */
-// export default {
-//   CopyText,
-//   urlQuery,
-//   Test
-// }
-
-/**
- * 第二种暴露方式
- */
-exports.default = {
+export default {
   CopyText,
   urlQuery,
   Test
 }
+
+/**
+ * 第二种暴露方式
+ */
+// exports.default = {
+//   CopyText,
+//   urlQuery,
+//   Test
+// };

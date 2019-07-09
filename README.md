@@ -1,5 +1,26 @@
 # NPM
-NPM包管理
+
+## NPM包管理
+
+## 本地开发
+
+```bash
+$ npm run dev
+```
+
+## 打包dist
+
+```bash
+$ npm run build
+```
+
+## NPM发布
+
+```bash
+$ npm run pub
+```
+
+操作指南：
 
 module.exports和exports和export和export default的区别，import和require的区别:
 https://www.jianshu.com/p/f6c5a646c00b

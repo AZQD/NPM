@@ -1,6 +1,6 @@
-const path = require('path')
-const merge = require('webpack-merge')
-const baseConfig = require('./webpack.base.js')
+const path = require('path');
+const merge = require('webpack-merge');
+const baseConfig = require('./webpack.base.js');
 
 const devConfig = {
   entry: './demo/demo.js',
@@ -19,17 +19,17 @@ const devConfig = {
   module: {
     rules: [
       {
-        test:/\.less$/,
+        test: /\.less$/,
         exclude: '/node_modules/',
         use: [
           {
-          loader: 'style-loader'
+            loader: 'style-loader'
           },
           {
-          loader: 'css-loader'
+            loader: 'css-loader'
           },
           {
-          loader: 'less-loader'
+            loader: 'less-loader'
           }
         ]
       }
