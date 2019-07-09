@@ -21,4 +21,4 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
         ]
       ]
     }
-    才可以使用：export default 或 module.exports.default；
+    才可以使用：export default 或 exports.default；
