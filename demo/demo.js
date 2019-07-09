@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import {urlQuery, CopyText, MyComponent} from '../src/index'
+import {urlQuery, CopyText, MyComponent} from '../dist/index'
 console.log(234, MyComponent);
-// console.log(urlQuery, CopyText, MyComponent);
+console.log(urlQuery, CopyText, MyComponent);
 
 class Demo extends React.Component{
 

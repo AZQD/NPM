@@ -1,27 +1,26 @@
-import React, {Component} from 'react';
-import qs from 'qs';
-import './index.less'
-import CopyText from './CopyText/index'
+import CopyText from './Component/CopyText/index'
+import MyComponent from './Component/MyComponent/index'
+
+import urlQuery from './util/urlQuery'
 
 /**
- * 获取URL链接参数Object
+ * 在es5中，用module.exports和exports导出模块，用require引入模块。
+ * es6新增export和export default导出模块，import导入模块。
  */
 
-function urlQuery() {
-  console.log('当前路由页面参数：', qs.parse(window.location.search, {ignoreQueryPrefix: true}));
-  return qs.parse(window.location.search, {ignoreQueryPrefix: true});
-}
-
-class MyComponent extends Component{
-  constructor(props) {
-    super(props);
-  }
-  render(){
-    return <div className="testBox">这是 MyComponent 组件1</div>
-  }
-}
-
+/**
+ * 第一种暴露方式
+ */
 export default {
+  CopyText,
+  urlQuery,
+  MyComponent
+}
+
+/**
+ * 第二种暴露方式
+ */
+module.exports.default = {
   CopyText,
   urlQuery,
   MyComponent
