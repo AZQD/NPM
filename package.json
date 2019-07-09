@@ -9,6 +9,10 @@
     "build": "set NODE_ENV=production && webpack --config ./config/webpack.config.prod.js",
     "pub": "npm run build && npm publish"
   },
+  "keywords": [
+    "npm",
+    "lcj cj"
+  ],
   "author": "liuchaojie",
   "license": "ISC",
   "dependencies": {
