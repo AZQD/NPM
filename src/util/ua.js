@@ -2,7 +2,7 @@
  * @module 获取ua
  * @description 获取ua
  */
-export default function getUa () {
+export default function getUa() {
   let ua = navigator.userAgent;
   return {
     wx: ua.match(/MicroMessenger\/([\d.]+)/),   // 微信

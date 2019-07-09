@@ -9,6 +9,7 @@ import Test from './Component/Test/index'
  */
 import urlQuery from './util/urlQuery'
 import getUa from './util/ua'
+import loadScript from './util/loadScript'
 
 
 /**
@@ -24,7 +25,8 @@ export default {
   CopyText,
 
   urlQuery,
-  getUa
+  getUa,
+  loadScript
 }
 
 /**
@@ -35,5 +37,6 @@ export default {
 //   CopyText,
 //
 //   urlQuery,
-//   getUa
+//   getUa,
+//   loadScript
 // };
