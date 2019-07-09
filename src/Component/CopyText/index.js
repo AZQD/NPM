@@ -9,7 +9,6 @@
  *
  * 3.参数配置：
  *  copyConfig = (copyText) => ({
-    clickLog: 'tz_detail_SQpopclick', // 复制文本埋点 // 非必填，默认为空
     copyText: copyText, // 必填，要复制的文本
     buttonText: '点我复制', // 非必填，默认为：复制
     className: 'right', // 非必填，默认为空
