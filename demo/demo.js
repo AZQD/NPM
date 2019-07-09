@@ -10,7 +10,7 @@ class Demo extends React.Component {
   copyConfig = (copyText) => ({
     copyText: copyText, // 必填，要复制的文本
     buttonText: '点我复制', // 非必填，默认为：复制
-    className: 'right', // 非必填，默认为空
+    className: '', // 非必填，默认为空
     callback: () => {
       console.log('复制文本成功了~');
     }

@@ -1,17 +1,20 @@
+@rem: 32rem;
+
 .partBox {
   .partItem {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     border: 1px solid pink;
     border-bottom: none;
     .left {
-      padding: 20px;
-      width: 200px;
-      border-right: 1px solid pink;
+      padding: 40/@rem;
+      width: 200/@rem;
     }
     .right {
-      padding: 20px;
+      padding: 40/@rem;
+      width: 0;
       flex-grow: 1;
+      border-left: 1px solid pink;
     }
   }
   .partItem:last-child {
