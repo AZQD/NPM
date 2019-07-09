@@ -1,5 +1,5 @@
 import CopyText from './Component/CopyText/index'
-import MyComponent from './Component/MyComponent/index'
+import Test from './Component/Test/index'
 
 import urlQuery from './util/urlQuery'
 
@@ -14,7 +14,7 @@ import urlQuery from './util/urlQuery'
 export default {
   CopyText,
   urlQuery,
-  MyComponent
+  Test
 }
 
 /**
@@ -23,5 +23,5 @@ export default {
 module.exports.default = {
   CopyText,
   urlQuery,
-  MyComponent
+  Test
 }

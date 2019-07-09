@@ -6,6 +6,6 @@ export default class MyComponent extends Component{
     super(props);
   }
   render(){
-    return <div className="testBox">这是 MyComponent 组件1</div>
+    return <div className="testBox">这是 Test 组件</div>
   }
 }
