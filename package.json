@@ -15,6 +15,14 @@
   ],
   "author": "liuchaojie",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AZQD/NPM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AZQD/NPM/issues"
+  },
+  "homepage": "https://github.com/AZQD/NPM#readme",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
