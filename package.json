@@ -1,6 +1,6 @@
 {
   "name": "lcj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lcj npm",
   "main": "dist/index.js",
   "scripts": {
