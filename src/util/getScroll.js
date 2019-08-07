@@ -1,6 +1,7 @@
 /**
- * scrollTop：获取页面滚动条距离顶部的距离；
- * scrollBottom：获取页面滚动条距离底部的距离；
+ * scrollTop()：获取页面滚动条距离顶部的距离；
+ * getScrollHeight() - getScrollTop() - getWindowHeight()：获取页面滚动条距离底部的距离；
+ * 详细使用说明文档：README.md
  */
 
 //滚动条在Y轴上的滚动距离
