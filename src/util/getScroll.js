@@ -40,9 +40,8 @@ function getWindowHeight() {
   return windowHeight;
 }
 
-let getScrollBottom = getScrollHeight() - getScrollTop() - getWindowHeight();
-
 export default {
-  scrollTop: getScrollTop(),
-  scrollBottom: getScrollBottom
+  getScrollTop,
+  getScrollHeight,
+  getWindowHeight
 };
