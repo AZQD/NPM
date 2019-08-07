@@ -99,6 +99,15 @@ class Demo extends React.Component {
             </div>
           </div>
 
+          <div className="partItem">
+            <div className="left">
+              getScroll
+            </div>
+            <div className="right">
+              获取页面滚动条距离顶部/底部的距离
+            </div>
+          </div>
+
         </div>
 
 
