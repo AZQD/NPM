@@ -10,6 +10,7 @@ import Test from './Component/Test/index'
 import urlQuery from './util/urlQuery'
 import getUa from './util/ua'
 import loadScript from './util/loadScript'
+import getScroll from './util/getScroll'
 
 
 /**
@@ -26,7 +27,8 @@ export default {
 
   urlQuery,
   getUa,
-  loadScript
+  loadScript,
+  getScroll
 }
 
 /**
@@ -38,5 +40,6 @@ export default {
 //
 //   urlQuery,
 //   getUa,
-//   loadScript
+//   loadScript,
+//   getScroll
 // };
