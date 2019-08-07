@@ -46,3 +46,19 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
       ]
     }
     才可以使用：export default 或 exports.default；
+
+getScroll组件使用：
+```js
+  import { getScroll } from 'lcj';
+  const {getScrollHeight, getScrollTop, getWindowHeight} = getScroll;
+  
+  componentWillMount () {
+      window.addEventListener('scroll', () => {
+          let scrollTopDistance = getScrollTop();
+          let scrollBottomDistance = getScrollHeight() - getScrollTop() - getWindowHeight();
+          console.log('获取页面滚动条距离顶部的距离：', scrollTopDistance);
+          console.log('获取页面滚动条距离底部的距离：', scrollBottomDistance);
+          }
+      )
+  }
+```
