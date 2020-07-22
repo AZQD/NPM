@@ -63,3 +63,5 @@ getScroll组件使用：
   }
 ```
 参考文档：https://www.cnblogs.com/winyh/p/6715010.html
+
+npm publish发布成功，但官网一直是旧版本号，重新npm login即可；
