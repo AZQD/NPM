@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import './demo.less'
 
-// import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce } from '../src/index' // 开发阶段使用
-import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce } from '../dist/index' // 测试发包使用
+import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce, throttle } from '../src/index' // 开发阶段使用
+// import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce, throttle } from '../dist/index' // 测试发包使用
 
 class Demo extends React.Component {
 
@@ -114,6 +114,15 @@ class Demo extends React.Component {
             </div>
             <div className="right">
               防抖（只执行一次）
+            </div>
+          </div>
+
+          <div className="partItem">
+            <div className="left">
+              throttle
+            </div>
+            <div className="right">
+              节流（每隔delay周期执行一次）
             </div>
           </div>
 

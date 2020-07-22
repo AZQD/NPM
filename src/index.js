@@ -12,6 +12,7 @@ import getUa from './util/ua'
 import loadScript from './util/loadScript'
 import getScroll from './util/getScroll'
 import debounce from './util/debounce'
+import throttle from './util/throttle'
 
 
 /**
@@ -30,7 +31,8 @@ export default {
   getUa,
   loadScript,
   getScroll,
-  debounce
+  debounce,
+  throttle
 }
 
 /**
