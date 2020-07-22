@@ -4,6 +4,7 @@ import './demo.less'
 
 import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce, throttle } from '../src/index' // 开发阶段使用
 // import { CopyText, Test, urlQuery, getUa, loadScript, getScroll, debounce, throttle } from '../dist/index' // 测试发包使用
+console.log(debounce, throttle);
 
 class Demo extends React.Component {
 
