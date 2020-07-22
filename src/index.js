@@ -11,6 +11,7 @@ import urlQuery from './util/urlQuery'
 import getUa from './util/ua'
 import loadScript from './util/loadScript'
 import getScroll from './util/getScroll'
+import debounce from './util/debounce'
 
 
 /**
@@ -28,7 +29,8 @@ export default {
   urlQuery,
   getUa,
   loadScript,
-  getScroll
+  getScroll,
+  debounce
 }
 
 /**
