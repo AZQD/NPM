@@ -49,7 +49,7 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
 
 getScroll组件使用：
 ```js
-  import { getScroll } from 'lcj';
+  import { getScroll } from 'azqd';
   const {getScrollHeight, getScrollTop, getWindowHeight} = getScroll;
   
   componentWillMount () {
