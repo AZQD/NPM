@@ -1,6 +1,6 @@
 {
   "name": "azqd",
-  "version": "1.0.12",
+  "version": "1.0.0",
   "description": "azqd npm",
   "main": "dist/index.js",
   "scripts": {
