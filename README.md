@@ -95,3 +95,37 @@ const {debounce, throttle} = AZQD.lib;
   }
 ```
 参考文档：https://www.cnblogs.com/winyh/p/6715010.html
+
+
+#### 元素观察器监听
+
+#### 参数
+
+| 参数名    | 类型   | 说明                                      |
+| :-------- | :----- | ----------------------------------------- |
+| elements  | NodeList | 必传 格式：document.querySelectorAll(".infoBox .infoItem")    |
+| callback  | function | 非必传  |
+| options   | object | 非必传 ratio:显示/隐藏比例；poll：节流时间；repeat：是否上报多次埋点 |
+
+#### 示例
+
+    watchExposure(document.querySelectorAll(".infoBox .infoItem"), function (res) {
+          console.log('成功回调:', res);
+        }, {
+          ratio: 0.5, // 显示/隐藏比例，默认值：0.5，0.5即元素显示/隐藏50%时上报；
+          poll: 100, // 节流时间，默认值：100ms；
+          repeat: false, // 是否上报多次埋点，默认值：false，即：仅上报一次展示埋点；
+      });
+
+#### 返回
+
+| 参数名 | 类型    | 说明  |
+| :----- | :------ | ----- |
+| index      | number | DOM元素在伪数组中的下标 |
+| visibility | boolean| DOM元素是否显示 |
+| item       | object | 监听dom节点信息 |
+
+#### 备注
+
+场景1.用于列表页每条数据上报一次展示埋点；
+场景2.用于列表页每条数据上报多次展示、隐藏埋点；
