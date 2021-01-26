@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/AZQD/NPM#readme",
   "dependencies": {
+    "intersection-observer": "^0.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
