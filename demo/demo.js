@@ -6,7 +6,8 @@ import AZQD from '../src/index' // 开发阶段使用
 // import AZQD from '../dist/index' // 测试发包使用
 
 const {CopyText, Test} = AZQD.comp;
-const {urlQuery, getUa, loadScript, getScroll, debounce, throttle} = AZQD.lib;
+const {urlQuery, getUa, loadScript, getScroll, debounce, throttle, watchExposure} = AZQD.lib;
+// console.log(watchExposure);
 
 class Demo extends React.Component {
 
@@ -126,6 +127,15 @@ class Demo extends React.Component {
                         </div>
                         <div className="right">
                             节流（每隔delay周期执行一次）
+                        </div>
+                    </div>
+
+                    <div className="partItem">
+                        <div className="left">
+                            watchExposure
+                        </div>
+                        <div className="right">
+                            元素观察器监听
                         </div>
                     </div>
 

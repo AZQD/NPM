@@ -18,6 +18,7 @@ import loadScript from './lib/loadScript'
 import getScroll from './lib/getScroll'
 import debounce from './lib/debounce'
 import throttle from './lib/throttle'
+import watchExposure from './lib/watchExposure'
 
 const lib = {
     urlQuery,
@@ -26,6 +27,7 @@ const lib = {
     getScroll,
     debounce,
     throttle,
+    watchExposure,
 };
 
 
