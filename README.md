@@ -1,6 +1,4 @@
-# NPM
-
-## NPM包管理
+# NPM包管理
 
 ## 本地开发
 
@@ -8,7 +6,7 @@
 $ npm run dev
 ```
 
-## 打包dist
+## 本地打包
 
 ```bash
 $ npm run build
@@ -20,20 +18,23 @@ $ npm run build
 $ npm run pub
 ```
 
-操作指南：
 
-module.exports和exports和export和export default的区别，import和require的区别:
+---
 
-https://www.jianshu.com/p/f6c5a646c00b
 
-export default,exports.default,module.exports,require,import整理:
+## 开发指南：
 
-https://www.jianshu.com/p/8fde36da1537
+### module.exports和exports和export和export default的区别
 
-babel-plugin-add-module-exports使用：
-
-https://www.npmjs.com/package/babel-plugin-add-module-exports
-
+    module.exports和exports和export和export default的区别，import和require的区别:
+    https://www.jianshu.com/p/f6c5a646c00b
+    
+    export default,exports.default,module.exports,require,import整理:
+    https://www.jianshu.com/p/8fde36da1537
+    
+    babel-plugin-add-module-exports使用：
+    https://www.npmjs.com/package/babel-plugin-add-module-exports
+    
     .babelrc文件中必须添加：
     {
       "plugins": [
@@ -47,7 +48,38 @@ https://www.npmjs.com/package/babel-plugin-add-module-exports
     }
     才可以使用：export default 或 exports.default；
 
-getScroll组件使用：
+### npm publish发布成功，但官网一直是旧版本号
+
+    重新npm login即可；
+
+
+---
+
+
+## 使用
+
+### 安装
+
+```bash
+$ npm install azqd --save
+```
+
+### 引入
+
+```js
+import AZQD from 'azqd';
+
+const {CopyText, Test} = AZQD.comp;
+const {debounce, throttle} = AZQD.lib;
+```
+
+
+---
+
+
+## 示例
+
+### getScroll组件使用：
 ```js
   import { getScroll } from 'azqd';
   const {getScrollHeight, getScrollTop, getWindowHeight} = getScroll;
@@ -63,5 +95,3 @@ getScroll组件使用：
   }
 ```
 参考文档：https://www.cnblogs.com/winyh/p/6715010.html
-
-npm publish发布成功，但官网一直是旧版本号，重新npm login即可；
