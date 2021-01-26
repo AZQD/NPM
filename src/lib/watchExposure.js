@@ -1,5 +1,6 @@
 // 不能删，解决问题：polyfill插件，解决IntersectionObserver API兼容性问题
 import intersection from 'intersection-observer';
+
 /**
  * 元素观察器监听
  *
@@ -77,7 +78,7 @@ export default function watchExposure (elements, callback, options = {}) {
 
         Array.from(elements).forEach((el, idx) => {
             // 分页情况下，如果再次调用该方法，则对同一个DOM，不再重复监听；
-            if(el.getAttribute('observer')) {
+            if (el.getAttribute('observer')) {
                 return;
             }
             el.setAttribute('idx', idx);

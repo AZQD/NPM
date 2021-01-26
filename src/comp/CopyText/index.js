@@ -24,37 +24,37 @@ import './index.less'
 
 export default class CopyText extends Component {
 
-  constructor(props) {
-    super(props);
-    this.clipboard = new ClipboardJS('.copy-btn');
-    this.state = {}
-  }
+    constructor (props) {
+        super(props);
+        this.clipboard = new ClipboardJS('.copy-btn');
+        this.state = {}
+    }
 
-  componentWillMount() {
-  }
+    componentWillMount () {
+    }
 
-  componentDidMount() {
-    this.mounted = true; // 避免因为组件并没有装载上便开始执行setState({})
-    let {copyConfig} = this.props;
-    this.clipboard.on('success', (e) => {
-      if (this.mounted) {
-        copyConfig.callback && copyConfig.callback(); // 执行父组件回调函数
-        e.clearSelection();
-      }
-    });
-  }
+    componentDidMount () {
+        this.mounted = true; // 避免因为组件并没有装载上便开始执行setState({})
+        let {copyConfig} = this.props;
+        this.clipboard.on('success', (e) => {
+            if (this.mounted) {
+                copyConfig.callback && copyConfig.callback(); // 执行父组件回调函数
+                e.clearSelection();
+            }
+        });
+    }
 
-  componentWillUnmount() {
-    this.mounted = false;
-  }
+    componentWillUnmount () {
+        this.mounted = false;
+    }
 
-  render() {
-    let {copyConfig} = this.props;
-    return (
-      <React.Fragment>
+    render () {
+        let {copyConfig} = this.props;
+        return (
+            <React.Fragment>
         <span className={`copy-btn ${copyConfig.className || ''}`}
               data-clipboard-text={copyConfig.copyText}>{copyConfig.buttonText}</span>
-      </React.Fragment>
-    )
-  }
+            </React.Fragment>
+        )
+    }
 }
