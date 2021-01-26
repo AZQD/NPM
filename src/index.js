@@ -1,18 +1,32 @@
 /**
  * 组件
  */
-import CopyText from './Component/CopyText/index'
-import Test from './Component/Test/index'
+import CopyText from './comp/CopyText/index'
+import Test from './comp/Test/index'
+
+const comp = {
+    CopyText,
+    Test,
+};
 
 /**
  * util
  */
-import urlQuery from './util/urlQuery'
-import getUa from './util/ua'
-import loadScript from './util/loadScript'
-import getScroll from './util/getScroll'
-import debounce from './util/debounce'
-import throttle from './util/throttle'
+import urlQuery from './lib/urlQuery'
+import getUa from './lib/ua'
+import loadScript from './lib/loadScript'
+import getScroll from './lib/getScroll'
+import debounce from './lib/debounce'
+import throttle from './lib/throttle'
+
+const lib = {
+    urlQuery,
+    getUa,
+    loadScript,
+    getScroll,
+    debounce,
+    throttle,
+};
 
 
 /**
@@ -24,26 +38,14 @@ import throttle from './util/throttle'
  * 第一种暴露方式
  */
 export default {
-  Test,
-  CopyText,
-
-  urlQuery,
-  getUa,
-  loadScript,
-  getScroll,
-  debounce,
-  throttle
+    comp,
+    lib
 }
 
 /**
  * 第二种暴露方式
  */
-// exports.default = {
-//   Test,
-//   CopyText,
-//
-//   urlQuery,
-//   getUa,
-//   loadScript,
-//   getScroll
-// };
+exports.default = {
+    comp,
+    lib
+};
