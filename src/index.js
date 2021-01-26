@@ -47,7 +47,7 @@ export default {
 /**
  * 第二种暴露方式
  */
-exports.default = {
-    comp,
-    lib
-};
+// exports.default = {
+//     comp,
+//     lib
+// };
