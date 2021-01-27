@@ -7,7 +7,7 @@ import AZQD from '../src/index' // 开发阶段使用
 
 const {CopyText, Test} = AZQD.comp;
 const {urlQuery, getUa, loadScript, getScroll, debounce, throttle, watchExposure} = AZQD.lib;
-// console.log(watchExposure);
+console.log(AZQD);
 
 class Demo extends React.Component {
 
