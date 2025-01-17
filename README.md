@@ -17,7 +17,8 @@ $ npm run build
 ```bash
 $ npm run pub
 ```
-
+具体发包流程及常见问题总结：
+https://github.com/AZQD/command仓库NPM/README.md文档；
 
 ---
 
@@ -131,4 +132,4 @@ const {debounce, throttle} = AZQD.lib;
     场景2.用于列表页每条数据上报多次展示、隐藏埋点；
 	
 	
-2025年1月17日 更新1
+2025年1月17日 更新2
